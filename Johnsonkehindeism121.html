@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Johnson</title>
+        <script src="https://kit.fontawesome.com/daa84f506d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hidesidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">PROFILE</a></li>
+                <li><a href="#">PROJECT</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                
+                
+            </ul>  
+        </nav>
+        <nav>
+            <ul>
+                <li> <a href="#">JOHNSON</a></li>
+                <li class="hideOnMobile"><a href="#">HOME</a></li>
+                <li class="hideOnMobile"><a href="#">PROFILE</a></li>
+                <li class="hideOnMobile"><a href="#">PROJECT</a></li>
+                <li class="hideOnMobile"><a href="#">CONTACT US</a></li>
+                <li  class="menu-button"    onclick="showsidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="26" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+               </ul>
+        </nav>     
+              </div>
+        <script>
+            function showsidebar(){
+                const sidebar =  document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+            function hidesidebar(){
+                const sidebar =  document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        <div class="headertext">
+            <p1>UI/ UX DESIGNER</p1><BR>
+            <p1>ANIMATOR AND AN EDITOR</p1>
+            <h1>I AM  <span>JOHNSON </span> <br> FROM NIGERIA</h1>
+            <p2> student @ PAU</p2><br><br>
+            <button>Hire me</button>
+          
+        </div>
+        <div class="contact">
+          <a href="https://www.instagram.com/johnsonkehinde01/" class="fa fa-instagram"></a>
+          <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="fa fa-linkedin"></a>
+          <a href="https://twitter.com/johnson25008819" class="fa fa-twitter"></a>
+          <a href="https://myaccount.google.com/u/1/?hl=en&utm_source=OGB&utm_medium=act&pli=1" class="fa fa-google"></a>
+        </div>
+        
+    </header>
+     
+      
+    
+    <!-- -------------about-------------- -->
+<div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="profilepic.png" alt="Profile Picture">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Johnson Ayodeji Abdulhamid Kehinde is a passionate and innovative UX/UI designer with
+            over 3 years of experience in creating engaging digital experiences for websites and mobile 
+            applications. With a background in both user experience research and interface design, Johnson 
+            brings a unique blend of analytical thinking and creative problem-solving skills to every project
+            he undertakes. He is dedicated to understanding user needs and translating them into intuitive and
+            visually compelling designs that enhance usability and delight users.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>UI/UX:</span><br> Designing Web/App interfaces</li>
+              <li><span>Web Development:</span><br> Web app Development</li>
+              <li><span>App Development:</span><br> Building IOS/Android apps</li>
+              <li><span>Problem-solving:</span><br> Strong analytical and critical thinking skills</li>
+              <li><span>Collaboration:</span><br> A team player with excellent communication skills</li>
+              <li><span>Wireframing and Prototyping:</span><br> Experienced in creating wireframes, user flows, and interactive prototypes using Adobe XD, Sketch, and InVision.</li> 
+              <li><span>Responsive Design:</span><br> Knowledgeable in designing responsive interfaces that adapt seamlessly to different screen sizes and devices</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Member UI/UX designer at speed.com (2018 till present):</span><br> Led the design of several successful website and mobile app projects from concept to launch, collaborating closely with clients and development teams to ensure project success.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>Undergraduate of Information Science and Media Studies:</span><br> Pan Atlantic University</li>
+              <li><span>Certificate in User Experience Design:</span><br> Interaction Design Foundation</li>
+              <li><span>Alumni of Day Waterman College:</span><br> Graduating class of 2023</li>
+            </ul> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="service">
+      <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+              <div class="learn">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Elevate your online presence with our expert web design services. we create custom, responsive, and SEO-friendly websites that reflectyour brand and engage your audience
+                  <a href="#">Learn more...</a>
+                </p>
+              </div>
+              <div class="learn">
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX </h2>
+                <p>Elevate your online presence with our expert web design services. we create custom, responsive, and SEO-friendly websites that reflectyour brand and engage your audience
+                  <a href="#">Learn more...</a>
+                </p>
+              </div>
+              <div class="learn">
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App design Design</h2>
+                <p>Elevate your online presence with our expert web design services. we create custom, responsive, and SEO-friendly websites that reflectyour brand and engage your audience<br> 
+                  <a href="#">Learn more...</a>
+                </p>
+              </div>
+            </div>
+            <!-----projects------>
+            <div id="Projects">
+              <div class="container">
+                <h1 class="sub-title">My projects</h1>
+                <div class="work-list">
+                  <div class="work">
+                    <img src="restaurant.png">
+                    <div class="layer">
+                      <h3> Speed Restaurant </h3>
+                      <p> A dream we hope to come true one day.</p><br>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <img src="team.png">
+                    <div class="layer">
+                      <h3> Restuarant website </h3>
+                      <p> Practices for the team page of speed restaurants.</p><br>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                  <div class="work">
+                    <img src="store1.png">
+                    <div class="layer">
+                      <h3> A store website </h3>
+                      <p> This is a java it main purpose is to solve a quadratic equation.</p><br>
+                      <a href="https://od1.ng/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                  </div> 
+                  <div class="work">
+                    <img src="gallery.png">
+                    <div class="layer">
+                      <h3> Cat Gallery</h3>
+                      <p> Cat Gallery one of our class projects</p><br>
+                      <a href="https://od1.ng/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="cafe.png">
+                    <div class="layer">
+                      <h3> ISMS CAFE </h3>
+                      <p> A class project to make a website for ISMS CAFE.</p><br>
+                      <a href="https://od1.ng/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                  </div>
+                  <div class="work">
+                    <img src="store.png">
+                    <div class="layer">
+                      <h3> A clothing store </h3>
+                      <p> An active and responsive website for cloth sales.</p><br>
+                      <a href="https://od1.ng/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+               
+    </div>
+  <!----------contact--------->
+  <div id="Contact">
+    <div class="containerc">
+      <h1 class="sub-title">Reach out to us</h1>
+      <div class="content">
+        <div class="left-side">
+          <div class="details address">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Pan Atlantic University</div>
+            <div class="text-two">Ibeju Lekki, Lagos</div>
+          </div>
+          <br><br>
+          <div class="details phone">
+            <i class="fa-solid fa-phone"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">09113252467</div>
+            <div class="text-two">09135727696</div>
+          </div>
+          <br><br>
+          <div class="details email">
+            <i class="fa-solid fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">johnson.kehinde@pau.edu.ng</div>
+            <div class="text-two">johnsonkehinde1932@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any job for us or any type of queries regarding our services, you can send a message from here. It is a pleasure to hear from you; your satisfaction is our priority.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name" required>
+            </div>
+            <div class="input-box">
+              <input type="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message" required></textarea>
+            </div>
+            <br>
+            <div class="button">
+              <input type="submit" value="Send now">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+      </div>
+      </div>
+
+
+  <script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+  
+    function opentab(tabname) {
+      for (var tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (var tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      document.getElementById(tabname).classList.add("active-tab");
+      event.currentTarget.classList.add("active-link");
+    }
+  </script>
+   </body>
+   <footer>
+   
+    </nav>
+    <div class="contact-info">
+        <address>
+            Pan Atlantic University,Ibeju Lekki<br>
+            <a href="mailto:johnsonkehinde1932@gmail.com">johnsonkehinde1932@gmail.com</a><br>
+            <a href="tel:+09135727696">09135727696</a>
+        </address>
+    </div>
+    <div class="contact">
+      <a href="https://www.instagram.com/johnsonkehinde01/" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" class="fa fa-linkedin"></a>
+      <a href="https://twitter.com/johnson25008819" class="fa fa-twitter"></a>
+      <a href="https://myaccount.google.com/u/1/?hl=en&utm_source=OGB&utm_medium=act&pli=1" class="fa fa-google"></a>
+    </div>
+  
+  <button onclick="topFunction()" id="back-to-top-btn" title="Go to top">&#8679; Back to Top</button>
+ 
+</footer>
+
+<script>
+  // Function to scroll back to top smoothly
+  function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  // Show/hide back-to-top button based on scroll position
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("back-to-top-btn").style.display = "block";
+      } else {
+          document.getElementById("back-to-top-btn").style.display = "none";
+      }
+  }
+</script>
+  
+  
+   </html>
+  
